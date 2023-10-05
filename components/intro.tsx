@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { FaAtom } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Intro() {
@@ -35,9 +34,9 @@ export default function Intro() {
 							delay: 0.1,
 							duration: 0.7,
 						}}
-						className="absolute bottom-0 right-0 text-yellow-500 text-4xl"
+						className="absolute bottom-0 right-0 text-4xl"
 					>
-						<FaAtom />
+						👋🏽
 					</motion.span>
 				</div>
 			</div>
