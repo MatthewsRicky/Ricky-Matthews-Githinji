@@ -40,6 +40,16 @@ export default function Intro() {
 					</motion.span>
 				</div>
 			</div>
+
+			<p>
+				<span className="font-bold">Hi, I'm Ricky,</span> a{" "}
+				<span className="font-bold">
+					Front-end Developer & Graphic Designer
+				</span>
+				based in Kenya. I enjoy building{" "}
+				<span className="italic">sites & apps</span>. My focus is{" "}
+				<span className="underline">React (Next.js)</span>
+			</p>
 		</section>
 	);
 }
