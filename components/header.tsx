@@ -21,7 +21,12 @@ export default function Header() {
 							className="h-3/4 flex items-center justify-center"
 							key={link.hash}
 						>
-							<Link href={link.hash}>{link.name}</Link>
+							<Link
+								className="flex  w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+								href={link.hash}
+							>
+								{link.name}
+							</Link>
 						</li>
 					))}
 				</ul>
