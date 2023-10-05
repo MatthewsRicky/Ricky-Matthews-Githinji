@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Intro() {
 	return (
-		<section>
+		<section className="mb-28 max-w-[50rem] sm:mb-0 text-center">
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					<motion.div
@@ -41,7 +41,7 @@ export default function Intro() {
 				</div>
 			</div>
 
-			<p>
+			<p className="mb-10 mt-4 px-4 text-2xl font medium !leading-[1.5] sm:text-4xl">
 				<span className="font-bold">Hi, I'm Ricky,</span> a{" "}
 				<span className="font-bold">
 					Front-end Developer & Graphic Designer
