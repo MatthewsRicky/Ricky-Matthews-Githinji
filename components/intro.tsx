@@ -11,7 +11,10 @@ import SectionDivider from "./section-divider";
 
 export default function Intro() {
 	return (
-		<section className="mb-28 max-w-[50rem] sm:mb-0 text-center">
+		<section
+			className="mb-28 max-w-[50rem] sm:mb-0 text-center scroll-mt-[100rem]"
+			id="home"
+		>
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					<motion.div
