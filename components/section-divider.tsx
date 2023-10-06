@@ -9,8 +9,8 @@ export default function SectionDivider() {
 		<motion.div
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 1 }}
-			className="bg-slate-200 my-24 h-16 w-1 rounded-full sm:block"
+			transition={{ delay: 0.15 }}
+			className="bg-slate-200 my-24 h-16 w-1 rounded-full hidden sm:block"
 		></motion.div>
 	);
 }
