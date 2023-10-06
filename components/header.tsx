@@ -1,12 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { links } from "@/lib/data";
 
 export default function Header() {
+	const [activeSection, setActiveSection] = useState("Home");
 	return (
 		<header className="z-[999] relative">
 			<motion.div
