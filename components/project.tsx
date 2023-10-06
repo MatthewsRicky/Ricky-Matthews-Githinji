@@ -29,7 +29,6 @@ export default function Project({
 			}}
 			ref={ref}
 			className="mb-3 sm:mb-8 last:mb-0 group"
-			id="projects"
 		>
 			<section className="bg-slate-100 hover:bg-slate-200 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] rounded-lg relative group-even:pl-8 transition">
 				<div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
