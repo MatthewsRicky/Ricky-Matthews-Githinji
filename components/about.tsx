@@ -5,20 +5,11 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import SectionDivider from "./section-divider";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-	const { ref, inView } = useInView({
-		threshold: 0.75,
-	});
-
-	const { setActiveSection } = useActiveSectionContext();
-
-	useEffect(() => {
-		if (inView) {
-			setActiveSection("About");
-		}
-	}, [inView, setActiveSection]);
-
+	const { ref } = useSectionInView("About");
 	return (
 		<motion.section
 			ref={ref}
@@ -56,6 +47,17 @@ export default function About() {
 				<span className="font-medium">history and philosophy</span>. I'm also
 				learning how to play the guitar.
 			</p>
+			<motion.div
+				initial={{ scale: 0.5, opacity: 0.4 }}
+				animate={{ scale: 1, opacity: 1 }}
+				transition={{
+					delay: 0.18,
+				}}
+				className="flex w-[50%] justify-between mx-auto items-center"
+			>
+				<SectionDivider />
+				<SectionDivider />
+			</motion.div>
 		</motion.section>
 	);
 }
