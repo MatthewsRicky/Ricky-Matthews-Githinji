@@ -23,14 +23,17 @@ export default function Contact() {
 				</a>
 				or through this form.
 			</p>
-			<form className="mt-10">
+			<form className="mt-10 flex flex-col">
 				<input
 					type="email"
-					className="h-14 rounded-lg border border-black/10"
+					className="h-14 rounded-lg border borderBlack"
 				/>
-				<textarea />
-				<button type="submit">
-					Submit <FaPaperPlane />
+				<textarea className="h-52 my-3 rounded-lg borderBlack p-4" />
+				<button
+					type="submit"
+					className="flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-slate-900 text-white rounded-full outline-none transition-all"
+				>
+					Submit <FaPaperPlane className="text-xs" />
 				</button>
 			</form>
 		</section>
