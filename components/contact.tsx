@@ -9,6 +9,7 @@ export default function Contact() {
 	const { ref } = useSectionInView("Contact");
 	return (
 		<section
+			ref={ref}
 			id="contact"
 			className="mb-20 sm:mb-28 w-[min(100%,38rem)]"
 		>
@@ -31,9 +32,10 @@ export default function Contact() {
 				<textarea className="h-52 my-3 rounded-lg borderBlack p-4" />
 				<button
 					type="submit"
-					className="flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-slate-900 text-white rounded-full outline-none transition-all"
+					className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-slate-900 text-white rounded-full outline-none transition-all"
 				>
-					Submit <FaPaperPlane className="text-xs" />
+					Submit{" "}
+					<FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:translate-y-1" />
 				</button>
 			</form>
 		</section>
