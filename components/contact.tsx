@@ -4,11 +4,18 @@ import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Contact() {
 	const { ref } = useSectionInView("Contact");
 	return (
-		<section
+		<motion.section
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{
+				duration: 1,
+			}}
+			viewport={{ once: true }}
 			ref={ref}
 			id="contact"
 			className="mb-20 sm:mb-28 w-[min(100%,38rem)]"
@@ -20,7 +27,7 @@ export default function Contact() {
 					className="underline"
 					href="matthewsrickypro@gmail.com"
 				>
-					matthewsricky@gmail.com
+					matthewsricky@gmail.com{""}
 				</a>
 				or through this form.
 			</p>
@@ -42,6 +49,6 @@ export default function Contact() {
 					<FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:translate-y-1" />
 				</button>
 			</form>
-		</section>
+		</motion.section>
 	);
 }
