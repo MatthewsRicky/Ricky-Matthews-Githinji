@@ -4,8 +4,8 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const validateString = (value: unknown, maxLength; number) => {
-	if (!value || typeof value !== "string" || validateHeaderValue.length > maxLength) {
+const validateString = (value: unknown, maxLength: number) => {
+	if (!value || typeof value !== "string" || value.length > maxLength) {
 		return;
 		false;
 	}
@@ -20,13 +20,13 @@ export const sendEmail = async (formData: FormData) => {
 
 	if (!validateString(senderEmail, 500)) {
 		return {
-			error: "Invalid sender Email"
-		}
+			error: "Invalid sender Email",
+		};
 	}
 	if (!validateString(message, 5000)) {
 		return {
-			error: "Invalid Message."
-		}
+			error: "Invalid Message.",
+		};
 	}
 
 	resend.emails.send({
