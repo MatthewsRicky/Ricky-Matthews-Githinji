@@ -26,10 +26,10 @@ export default function Contact() {
 			<p className="text-slate-700 -mt-6">
 				Please contact me directly at{" "}
 				<a
-					className="underline"
+					className="underline font-semibold"
 					href="matthewsrickypro@gmail.com"
 				>
-					matthewsricky@gmail.com{""}
+					matthewsrickypro@gmail.com{" "}
 				</a>
 				or through this form.
 			</p>
