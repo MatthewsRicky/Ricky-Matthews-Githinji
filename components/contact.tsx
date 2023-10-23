@@ -33,7 +33,7 @@ export default function Contact() {
 			</p>
 			<form
 				className="mt-10 flex flex-col"
-				action={(formData) => {
+				action={async (formData) => {
 					console.log(formData);
 				}}
 			>
