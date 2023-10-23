@@ -8,6 +8,12 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
 	const { ref } = useSectionInView("Contact");
+
+	const sendEmail = async (formData) => {
+		console.log(formData.get("senderEmail"));
+		console.log(formData.get("senderMessage"));
+	};
+
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -34,12 +40,14 @@ export default function Contact() {
 			<form
 				className="mt-10 flex flex-col"
 				action={async (formData) => {
-					console.log(formData);
+					console.log(formData.get("senderEmail"));
+					console.log(formData.get("senderMessage"));
 				}}
 			>
 				<input
 					id="email"
 					type="email"
+					name="senderEmail"
 					className="h-14 rounded-lg border borderBlack p-4"
 					required
 					maxLength={500}
@@ -47,6 +55,8 @@ export default function Contact() {
 				/>
 				<textarea
 					id="text"
+					name="senderMessage
+					"
 					className="h-52 my-3 rounded-lg borderBlack p-4"
 					placeholder="Your Message"
 					required
