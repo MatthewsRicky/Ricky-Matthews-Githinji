@@ -3,6 +3,10 @@
 		{
 			"name": "ricky-matthews-githinji",
 			"path": "."
+		},
+		{
+			"name": "actions",
+			"path": "../../../../../Desktop/actions"
 		}
 	],
 	"settings": {}
