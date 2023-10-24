@@ -29,10 +29,10 @@ export default function ContactFormEmail({
 			<Head />
 			<Preview>New Message from your Portfolio</Preview>
 			<Tailwind>
-				<Body>
+				<Body className="bg-gray-100">
 					<Container>
-						<Section>
-							<Heading>
+						<Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
+							<Heading className="leading-tight">
 								You receeived thhe following meessage from the portfolio contact
 								form
 							</Heading>
