@@ -53,7 +53,7 @@ export default function Contact() {
 					id="email"
 					type="email"
 					name="senderEmail"
-					className="h-14 rounded-lg border borderBlack p-4"
+					className="h-14 rounded-lg border borderBlack p-4 dark:text-slate-950 dark:bg-slate-50 dark:bg-opacity-80 dark:focus:bg-opacity-90 transition-all"
 					required
 					maxLength={500}
 					placeholder="Your email"
@@ -61,7 +61,7 @@ export default function Contact() {
 				<textarea
 					id="text"
 					name="senderMessage"
-					className="h-52 my-3 rounded-lg borderBlack p-4"
+					className="h-52 my-3 rounded-lg borderBlack p-4 dark:text-slate-950 dark:bg-slate-50 dark:bg-opacity-80 dark:focus:bg-opacity-90 transition-all"
 					placeholder="Your Message"
 					required
 					maxLength={5000}
