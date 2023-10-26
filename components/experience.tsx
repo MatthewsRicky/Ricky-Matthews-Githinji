@@ -13,7 +13,7 @@ import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
-	const { theme } = useTheme;
+	const { theme } = useTheme();
 
 	return (
 		<section
@@ -35,7 +35,10 @@ export default function Experience() {
 								padding: "1.3rem 2rem",
 							}}
 							contentArrowStyle={{
-								borderRight: "0.4rem solid #9ca3af",
+								borderRight:
+									theme === "light"
+										? "0.4rem solid #9ca3af"
+										: "0.4rem solid rgba(255, 255, 255, 0.5)",
 							}}
 							date={item.date}
 							icon={item.icon}
