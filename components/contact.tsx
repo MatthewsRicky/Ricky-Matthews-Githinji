@@ -26,7 +26,7 @@ export default function Contact() {
 			className="mb-20 sm:mb-28 w-[min(100%,38rem)]"
 		>
 			<SectionHeading>Contact Me</SectionHeading>
-			<p className="text-slate-700 -mt-6">
+			<p className="text-slate-700 dark:text-slate-50/80 -mt-6">
 				Please contact me directly at{" "}
 				<a
 					className="underline font-semibold"
