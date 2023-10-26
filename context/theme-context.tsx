@@ -60,3 +60,13 @@ export default function ThemeContextProvider({
 		</ThemeContext.Provider>
 	);
 }
+
+export function useTheme() {
+	const context = useContext(ThemeContext);
+
+	if (context === null) {
+		throw new Error("useTheme must be used within a ThemContextProvider");
+	}
+
+	return context;
+}
