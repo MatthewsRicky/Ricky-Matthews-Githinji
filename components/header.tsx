@@ -32,7 +32,8 @@ export default function Header() {
 								className={clsx(
 									"flex  w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition dark:text-slate-400 dark:hover:text-slate-300",
 									{
-										"text-slate-950": activeSection === link.name,
+										"text-slate-950 dark:text-slate-200":
+											activeSection === link.name,
 									}
 								)}
 								href={link.hash}
