@@ -39,7 +39,7 @@ export default function Skills() {
 							once: true,
 						}}
 						custom={index}
-						className="bg-white border border-slate/[0.5] px-6 py-3 rounded-lg"
+						className="bg-white dark:bg-slate-50/10 dark:text-slate-50/80 borderBlack px-6 py-3 rounded-lg"
 						key={index}
 					>
 						{skill}
