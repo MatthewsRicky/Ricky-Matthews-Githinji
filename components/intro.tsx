@@ -146,7 +146,7 @@ export default function Intro() {
               width={192}
               quality={95}
               priority={true}
-              className="rounded-full object-cover shadow-xl h-24 w-24 border-[0.35rem] border-white"
+              className="rounded-full object-cover shadow-xl h-24 w-24 border-[0.35rem] border-white border-opacity-20 backdrop-blur-lg"
             />
           </motion.div>
 
