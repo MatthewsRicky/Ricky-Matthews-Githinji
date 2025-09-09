@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import potassium from "@/public/potassium.jpg";
 
 export const links = [
 	{
@@ -62,11 +62,11 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
-		title: "CorpComment",
+		title: "Flicker Light",
 		description:
-			"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-		imageUrl: corpcommentImg,
+			"I built a Flicker Light application to mimmick the flickering of different element based and colored flames of a candle light.",
+		tags: ["React", "ReactNative", "Expo", "Tailwind", "Typscript"],
+		imageUrl: potassium,
 	},
 	{
 		title: "rmtDev",
