@@ -34,7 +34,7 @@ export default function About() {
         <span className="font-medium">
           React, ReactNative, Next.js, Node.js, and MongoDB/Prisma/Appwrite
         </span>
-        I develop using typscript as well as tailwind for the wbe development
+        I develop using typscript as well as tailwind for the web development
         and native wind for the ReactNative app development. I Expo as well. I
         am always looking to learn new technologies. I am currently looking for
         a <span className="font-medium">full-time position</span> as an app
