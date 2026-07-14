@@ -135,7 +135,7 @@ export const projectsData = [
   {
     title: "Flicker Light",
     description:
-      "I built a Flicker Light application to mimmick the flickering of different element based and colored flames of a candle light.",
+      "I built a Flicker Light application to mimmick the flickering of a candle flame based on different elemental properties.",
     tags: ["React", "ReactNative", "Expo", "Tailwind", "Typscript"],
     imageUrl: potassium,
     galleryItems: flickerGallery,
