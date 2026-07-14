@@ -12,15 +12,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ricky Matthews Githinji",
-  description: "Frontend Developer, Graphic Designer",
-  icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/rickylogo.png", type: "image/png" },
-    ],
-    shortcut: "/favicon.svg",
-    apple: "/rickylogo.png",
-  },
+  description:
+    "Frontend Developer, React, Next.js, TypeScript, Tailwind CSS, Prisma, MongoDB, React Native, expo, and more.",
 };
 
 export default function RootLayout({
